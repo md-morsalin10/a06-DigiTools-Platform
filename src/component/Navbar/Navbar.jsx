@@ -4,7 +4,7 @@ import { LuShoppingCart } from 'react-icons/lu';
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 px-40 shadow-sm">
+            <div className="navbar bg-base-100 lg:px-40 shadow-sm">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -12,22 +12,18 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex="-1"
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            className="menu menu-sm dropdown-content bg-base-200 rounded-box z-1 mt-3 w-40 p-2 shadow">
+                            <li><a>Products</a></li>
+                            <li><a>Features</a></li>
+                            <li><a>Pricing</a></li>
+                            <li><a>Testimonials</a></li>
+                            <li><a>FAQ</a></li>
                         </ul>
                     </div>
-                    <h2 className='text-2xl font-bold'>DigiTools</h2>
+                    <h2 className='text-2xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>DigiTools</h2>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-2 text-[#101727] font-semibold">
                         <li><a>Products</a></li>
                         <li><a>Features</a></li>
                         <li><a>Pricing</a></li>
@@ -37,8 +33,8 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end gap-4">
                     <span><LuShoppingCart /></span>
-                    <h2>Login</h2>
-                    <h2>Get Started</h2>
+                    <p className='font-medium'>Login</p>
+                    <p className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-4 py-2 rounded-full text-white font-medium hover:border hover:border-[#9514FA] hover:bg-none hover:bg-transparent hover:text-[#9514FA] transition-all duration-300'>Get Started</p>
                 </div>
             </div>
         </div>
