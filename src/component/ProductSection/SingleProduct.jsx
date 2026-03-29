@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaCheck } from 'react-icons/fa';
 
-const SingleProduct = ({ product }) => {
-    // console.log(product);
+const SingleProduct = ({ product, carts, setCarts }) => {
     const { icon, name, description, features, period, price, tag } = product
 
-    console.log(tag);
-
-
+    const [isClicked, setIsClicked] = useState(false);
+    
+    const handleBuyBtn =(product)=> {
+        setCarts([...carts, product])
+        setIsClicked(true)
+    }
     return (
         <div className='shadow-xl border border-gray-300 p-6 space-y-2 rounded-2xl relative'>
             <div className='bg-white rounded-2xl'>
@@ -34,7 +36,7 @@ const SingleProduct = ({ product }) => {
                     <p>{tag}</p>
                 </div>
             </div>
-            <button className='btn w-full bg-linear-to-r from-[#4F39F6] py-6 to-[#9514FA] text-white rounded-full'>Buy Now</button>
+            <button onClick={()=>handleBuyBtn(product)} className={`w-full ${isClicked ? 'bg-green-500' : 'bg-linear-to-r from-[#4F39F6]  to-[#9514FA]'} py-3 font-semibold  text-white rounded-full`}>{isClicked ? 'Added to Cart' : 'Buy Now'}</button>
 
 
         </div>

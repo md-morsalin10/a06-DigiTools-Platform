@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
 
-const ToolsTap = () => {
-const [active, setActive] = useState("product")
+const ToolsTap = ({active, setActive}) => {
+
     return (
         <div className='max-w-7xl mx-auto flex flex-col justify-center items-center pt-20 pb-10 space-y-5'>
             <div className='space-y-4'>
