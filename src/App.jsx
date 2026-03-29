@@ -2,6 +2,7 @@ import './App.css'
 import BannerSection from './component/BannerSection/BannerSection'
 import FeatureRatting from './component/BannerSection/FeatureRatting'
 import Navbar from './component/Navbar/Navbar'
+import ToolsTap from './component/ToolsTap/ToolsTap'
 
 function App() {
  
@@ -11,6 +12,7 @@ function App() {
       <Navbar></Navbar>
       <BannerSection></BannerSection>
       <FeatureRatting></FeatureRatting>
+      <ToolsTap></ToolsTap>
     </>
   )
 }

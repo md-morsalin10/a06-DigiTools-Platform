@@ -1,4 +1,6 @@
 import React from 'react';
+import { CiStar } from 'react-icons/ci';
+import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 
 const FeatureRatting = () => {
     return (
@@ -13,7 +15,7 @@ const FeatureRatting = () => {
                     <p className='text-xl font-medium opacity-85'>Premium Tools</p>
                 </div>
                 <div className='flex flex-col justify-center items-center space-y-3 '>
-                    <h2 className='text-6xl font-bold'>4.9</h2>
+                    <h2 className='text-6xl font-bold'>4.9★</h2>
                     <p className='text-xl font-medium opacity-85'>Rating</p>
                 </div>
             </div>

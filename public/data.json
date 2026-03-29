@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited AI generation",
+      "50+ content templates",
+      "Plagiarism checker",
+      "SEO optimization tools"
+    ],
+    "icon": "https://i.ibb.co/LzN7f4p/ai-writing.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Drag-and-drop editor",
+      "Commercial license",
+      "Weekly new additions",
+      "High-resolution exports"
+    ],
+    "icon": "https://i.ibb.co/m0XyK9z/design-pack.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "4K video footage",
+      "No attribution required",
+      "Unlimited downloads",
+      "Adobe integration"
+    ],
+    "icon": "https://i.ibb.co/hR0Wv6S/stock-assets.png"
+  },
+  {
+    "id": 4,
+    "name": "SEO Master Tool",
+    "description": "Boost your website ranking with real-time analytics and keyword research.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Backlink analysis",
+      "Competitor tracking",
+      "Site audit reports",
+      "Keyword difficulty score"
+    ],
+    "icon": "https://i.ibb.co/vYm6z2X/seo-tool.png"
+  },
+  {
+    "id": 5,
+    "name": "Social Media Scheduler",
+    "description": "Plan, track, and publish your social media posts across all platforms from one dashboard.",
+    "price": 20,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Auto-post to 5 platforms",
+      "Advanced analytics",
+      "Hashtag generator",
+      "Bulk image uploader"
+    ],
+    "icon": "https://i.ibb.co/vYm6z2X/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "UI/UX Component Library",
+    "description": "A massive collection of React and Tailwind CSS components to speed up your development.",
+    "price": 79,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "500+ UI components",
+      "Figma source files",
+      "Dark mode support",
+      "Lifetime updates"
+    ],
+    "icon": "https://i.ibb.co/m0XyK9z/ui-library.png"
+  },
+  {
+    "id": 7,
+    "name": "Security Firewall Plus",
+    "description": "Enterprise-grade security for your web applications with real-time threat detection.",
+    "price": 150,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "DDoS protection",
+      "SSL certification",
+      "Daily malware scans",
+      "24/7 expert support"
+    ],
+    "icon": "https://i.ibb.co/hR0Wv6S/security.png"
+  },
+  {
+    "id": 8,
+    "name": "E-commerce Starter Kit",
+    "description": "Everything you need to launch your online store including payment gateway integration.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Inventory management",
+      "Mobile-ready design",
+      "Multi-currency support",
+      "Order tracking system"
+    ],
+    "icon": "https://i.ibb.co/LzN7f4p/ecommerce.png"
+  },
+  {
+    "id": 9,
+    "name": "AI Logo Maker",
+    "description": "Create professional logos for your brand instantly using our neural network engine.",
+    "price": 10,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "High-res SVG files",
+      "Brand guidelines",
+      "Unlimited revisions",
+      "Social media kit"
+    ],
+    "icon": "https://i.ibb.co/TqN8G5L/logo-maker.png"
+  },
+  {
+    "id": 10,
+    "name": "Project Manager Pro",
+    "description": "Organize tasks, manage teams, and track progress with our intuitive Kanban boards.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited projects",
+      "Time tracking",
+      "Team collaboration",
+      "Gantt charts"
+    ],
+    "icon": "https://i.ibb.co/N1W7P4Q/project-mgmt.png"
+  }
+]
