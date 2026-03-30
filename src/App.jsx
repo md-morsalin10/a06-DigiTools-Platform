@@ -8,6 +8,8 @@ import ToolsTap from './component/ToolsTap/ToolsTap'
 import CartsSection from './component/CartsSection/CartsSection'
 import GetStartedSection from './component/GetStartedSection/GetStartedSection'
 import PricingSection from './component/PricingSection/PricingSection'
+import TransformWorkflow from './component/TransformWorkflow/TransfromWorkflow'
+import Footer from './component/Footer/Footer'
 
 const productPromise = fetch('/data.json').then(res => res.json())
 const pricingPromise = fetch('/pricing.json').then(res => res.json())
@@ -23,19 +25,24 @@ function App() {
       <BannerSection></BannerSection>
       <FeatureRatting></FeatureRatting>
       <ToolsTap carts={carts} active={active} setActive={setActive}></ToolsTap>
-      {active === "product" && 
+      {active === "product" &&
 
-      <Suspense fallback={<p>Loading....</p>}>
-        <ProductSection carts={carts} setCarts={setCarts} productPromise={productPromise}></ProductSection>
-      </Suspense>
+        <Suspense fallback={<div className='flex justify-center items-center'>
+          <span className="loading loading-bars loading-xl"></span>
+        </div>}>
+          <ProductSection carts={carts} setCarts={setCarts} productPromise={productPromise}></ProductSection>
+        </Suspense>
       }
 
-      {active === "cart" && 
-      <CartsSection carts={carts} setCarts={setCarts} ></CartsSection>
+      {active === "cart" &&
+        <CartsSection carts={carts} setCarts={setCarts} ></CartsSection>
       }
 
       <GetStartedSection></GetStartedSection>
       <PricingSection pricingPromise={pricingPromise}></PricingSection>
+
+      <TransformWorkflow></TransformWorkflow>
+      <Footer></Footer>
 
 
     </>
