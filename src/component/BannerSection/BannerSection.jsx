@@ -15,9 +15,9 @@ const BannerSection = () => {
                 <p className='text-[#627382]'>Access premium AI tools, design assets, templates, and productivity <br /> software—all in one place. Start creating faster today. <br /> Explore Products
                 </p>
                 <div className='flex gap-4 items-center'>
-                    <button className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] font-semibold px-6 py-3 rounded-full text-white border-2 border-[#9514FA] hover:bg-none hover:bg-transparent hover:text-[#9514FA] transition-all duration-300'>Explore Products</button>
+                    <button className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] font-semibold w-40 py-2.5 rounded-full text-white border border-[#9514FA] hover:bg-none hover:bg-transparent hover:text-[#9514FA] transition-all duration-300'>Explore Products</button>
 
-                    <button className='flex gap-2 justify-center font-semibold items-center px-8 py-3 rounded-full border-2 border-[#9514FA] text-[#9514FA] hover:bg-[#9514FA] hover:text-white transition-all'> <IoPlayOutline size={22} />Watch Demo</button>
+                    <button className='flex gap-2 justify-center font-semibold items-center w-40 py-2.5 rounded-full border border-[#9514FA] text-[#9514FA] hover:bg-[#9514FA] hover:text-white transition-all'> <IoPlayOutline size={22} />Watch Demo</button>
                 </div>
             </div>
             <div>

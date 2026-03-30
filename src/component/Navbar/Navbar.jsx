@@ -36,7 +36,7 @@ const Navbar = ({ carts }) => {
                         {carts.length > 0 && <span className='absolute rounded-full text-white px-1.5 bg-red-400 -top-3 left-4'>{carts.length}</span>}
                     </span>
                     <p className='font-medium'>Login</p>
-                    <p className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-4 py-2 rounded-full text-white font-medium hover:border hover:border-[#9514FA] hover:bg-none hover:bg-transparent hover:text-[#9514FA] transition-all duration-300'>Get Started</p>
+                    <p className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-2 lg:px-4 py-1 lg:py-2 rounded-full text-white font-medium hover:border hover:border-[#9514FA] hover:bg-none hover:bg-transparent hover:text-[#9514FA] transition-all duration-300'>Get Started</p>
                 </div>
             </div>
         </div>
