@@ -6,6 +6,7 @@ import Navbar from './component/Navbar/Navbar'
 import ProductSection from './component/ProductSection/ProductSection'
 import ToolsTap from './component/ToolsTap/ToolsTap'
 import CartsSection from './component/CartsSection/CartsSection'
+import GetStartedSection from './component/GetStartedSection/GetStartedSection'
 
 const productPromise = fetch('/data.json').then(res => res.json())
 
@@ -30,6 +31,8 @@ function App() {
       {active === "cart" && 
       <CartsSection carts={carts} setCarts={setCarts} ></CartsSection>
       }
+
+      <GetStartedSection></GetStartedSection>
     </>
   )
 }
