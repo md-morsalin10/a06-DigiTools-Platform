@@ -10,6 +10,7 @@ import GetStartedSection from './component/GetStartedSection/GetStartedSection'
 import PricingSection from './component/PricingSection/PricingSection'
 import TransformWorkflow from './component/TransformWorkflow/TransfromWorkflow'
 import Footer from './component/Footer/Footer'
+import { ToastContainer } from 'react-toastify'
 
 const productPromise = fetch('/data.json').then(res => res.json())
 const pricingPromise = fetch('/pricing.json').then(res => res.json())
@@ -43,6 +44,8 @@ function App() {
 
       <TransformWorkflow></TransformWorkflow>
       <Footer></Footer>
+
+      <ToastContainer />
 
 
     </>

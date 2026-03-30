@@ -1,18 +1,33 @@
 import React from 'react';
 import SingleCart from './SingleCart';
+import noCart from '../../assets/no-cart.png'
+import { toast } from 'react-toastify';
 
 const CartsSection = ({ carts, setCarts }) => {
     const totalPrice = carts.reduce((sum, cart) => sum + cart.price, 0)
 
     const handlePayment = () => {
-        setCarts([])
+        setCarts([]);
+        toast.success("Payment Successful", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
     }
 
     return (
         <div className='max-w-7xl mx-auto  lg:p-10 border border-gray-300 rounded-xl mb-7'>
 
-            {carts.length === 0 && <div className='flex justify-center items-center h-40'>
-                <p className='text-xl font-bold'>No Carts Available</p>
+            {carts.length === 0 && <div className='flex flex-col justify-center space-y-4  bg-base-200 rounded-2xl items-center h-60'>
+                <div>
+                    <img className='h-20 w-20 ' src={noCart} alt="" />
+                </div>
+                <p className='font-semibold'>No Carts Available</p>
             </div>}
 
             {carts.length > 0 &&

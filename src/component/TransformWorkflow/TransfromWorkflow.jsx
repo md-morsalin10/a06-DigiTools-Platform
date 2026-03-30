@@ -5,7 +5,7 @@ const TransformWorkflow = () => {
         <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-15'>
             <div className='max-w-7xl mx-auto flex flex-col justify-center items-center py-10'>
                 <div className='text-center space-y-2'>
-                    <h2 className='text-5xl font-bold text-white'>Ready to Transform Your Workflow?</h2>
+                    <h2 className='text-3xl lg:text-5xl font-bold text-white'>Ready to Transform Your Workflow?</h2>
                     <p className='text-white opacity-90'>Join thousands of professionals who are already using Digitools to work smarter. <br />Start your free trial today.</p>
                 </div>
                 <div className='flex gap-2 justify-center items-center py-6'>
