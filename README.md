@@ -14,4 +14,6 @@ DigiTools Platform is a React-based web application where multiple digital tools
 - Responsive UI using Tailwind & DaisyUI
 - Lifting state up for better state management
 - Conditional Rendering
-- create fake api data using ai
+- Create Fake Api Data using AI (JSON data)
+- React Toastify (NPM Package)
+- React icons (NPM Package)
