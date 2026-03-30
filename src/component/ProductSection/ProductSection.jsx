@@ -6,7 +6,7 @@ const ProductSection = ({productPromise,carts, setCarts}) => {
     // console.log(productData);
     
     return (
-        <div className='max-w-7xl mx-auto grid grid-cols-3 gap-8'>
+        <div className='max-w-7xl mx-auto grid grid-cols-1 p-5 lg:grid-cols-3 gap-8'>
             {
                 productData.map(product=> <SingleProduct carts={carts} setCarts={setCarts} key={product.id} product={product}></SingleProduct>)
             }

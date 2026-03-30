@@ -16,10 +16,10 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar carts={carts}></Navbar>
       <BannerSection></BannerSection>
       <FeatureRatting></FeatureRatting>
-      <ToolsTap active={active} setActive={setActive}></ToolsTap>
+      <ToolsTap carts={carts} active={active} setActive={setActive}></ToolsTap>
       {active === "product" && 
 
       <Suspense fallback={<p>Loading....</p>}>

@@ -1,5 +1,5 @@
 
-const ToolsTap = ({active, setActive}) => {
+const ToolsTap = ({active, setActive,carts}) => {
 
     return (
         <div className='max-w-7xl mx-auto flex flex-col justify-center items-center pt-20 pb-10 space-y-5'>
@@ -11,7 +11,7 @@ const ToolsTap = ({active, setActive}) => {
                 {/* name of each tab group should be unique */}
                 <div className="tabs tabs-box bg-transparent">
                     <input onClick={()=> setActive('product')} type="radio" name="my_tabs_1" className={`${active==="product" ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white' :''} tab w-30 rounded-full text-[#25065D] font-semibold`} aria-label="Products" defaultChecked />
-                    <input onClick={()=> setActive('cart')} type="radio" name="my_tabs_1" className={`${active==="cart" ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white' :''} tab w-30 rounded-full text-[#25065D] font-semibold`} aria-label="cart (0)" />
+                    <input onClick={()=> setActive('cart')} type="radio" name="my_tabs_1" className={`${active==="cart" ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white' :''} tab w-30 rounded-full text-[#25065D] font-semibold`} aria-label={`Carts(${carts.length})`} />
                 </div>
             </div>
         </div>

@@ -1,7 +1,12 @@
 import React from 'react';
 
-const SingleCart = ({ cart }) => {
-    console.log(cart);
+const SingleCart = ({ cart,carts,setCarts }) => {
+    // console.log(cart);
+    const handleDeleteBtn = (targetCart) => {
+        const filterItem = carts.filter((item)=> item.id !== targetCart.id);
+        setCarts(filterItem)
+        
+    }
 
     return (
         <div className='flex justify-between items-center border border-gray-200 p-5 rounded-2xl bg-base-200'>
@@ -15,7 +20,7 @@ const SingleCart = ({ cart }) => {
                 </div>
             </div>
             <div>
-                <button className='text-[#FF3980] font-bold'>Remove</button>
+                <button onClick={()=>handleDeleteBtn(cart)} className='text-[#FF3980] btn font-bold'>Remove</button>
             </div>
         </div>
     );

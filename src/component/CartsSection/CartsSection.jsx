@@ -9,10 +9,10 @@ const CartsSection = ({ carts, setCarts }) => {
     }
 
     return (
-        <div className='max-w-7xl mx-auto p-10 border border-gray-300 rounded-xl mb-7'>
+        <div className='max-w-7xl mx-auto  lg:p-10 border border-gray-300 rounded-xl mb-7'>
 
-            {carts.length === 0 && <div className='flex justify-center items-center'>
-                <p>No Carts Available</p>
+            {carts.length === 0 && <div className='flex justify-center items-center h-40'>
+                <p className='text-xl font-bold'>No Carts Available</p>
             </div>}
 
             {carts.length > 0 &&
@@ -20,7 +20,7 @@ const CartsSection = ({ carts, setCarts }) => {
             }
             <div className='space-y-4'>
                 {
-                    carts.map(cart => <SingleCart key={cart.id} cart={cart}></SingleCart>)
+                    carts.map(cart => <SingleCart setCarts={setCarts} carts={carts} key={cart.id} cart={cart}></SingleCart>)
                 }
             </div>
 
