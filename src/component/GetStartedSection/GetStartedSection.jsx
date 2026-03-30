@@ -5,13 +5,14 @@ import rocket from '../../assets/rocket.png'
 
 const GetStartedSection = () => {
     return (
-        <div className='max-w-7xl mx-auto py-15'>
+        <div className='max-w-7xl mx-auto py-25'>
             <div className='text-center space-y-3'>
                 <h2 className='text-5xl font-bold text-[#101727]'>Get Started in 3 Steps</h2>
                 <p className='text-[#627382]'>Start using premium digital tools in minutes not hours.</p>
             </div>
-            <div className='grid grid-cols-3 gap-10 pt-15 '>
-                <div className='flex flex-col justify-center items-center relative border-2 border-gray-200 p-10 rounded-2xl shadow'>
+            <div className='grid grid-cols-1 p-7 lg:grid-cols-3 gap-10 pt-15'>
+
+                <div className='flex flex-col justify-center items-center relative border-2 h-96 border-gray-200 p-10 rounded-2xl shadow'>
                     <div className='bg-pink-100 p-5 rounded-full'>
                         <img src={user} alt="" />
                     </div>
@@ -23,7 +24,8 @@ const GetStartedSection = () => {
                         <p className='text-white'>01</p>
                     </div>
                 </div>
-                <div className='flex flex-col justify-center items-center relative border-2 border-gray-200 p-10 rounded-2xl shadow'>
+
+                <div className='flex flex-col justify-center items-center relative border-2 h-96 border-gray-200 p-10 rounded-2xl shadow'>
                     <div className='bg-pink-100 p-5 rounded-full'>
                         <img src={pack} alt="" />
                     </div>
@@ -35,7 +37,8 @@ const GetStartedSection = () => {
                         <p className='text-white'>02</p>
                     </div>
                 </div>
-                <div className='flex flex-col justify-center items-center relative border-2 border-gray-200 p-10 rounded-2xl shadow'>
+
+                <div className='flex flex-col justify-center items-center relative border-2 h-96 border-gray-200 p-10 rounded-2xl shadow'>
                     <div className='bg-pink-100 p-5 rounded-full'>
                         <img src={rocket} alt="" />
                     </div>

@@ -7,8 +7,10 @@ import ProductSection from './component/ProductSection/ProductSection'
 import ToolsTap from './component/ToolsTap/ToolsTap'
 import CartsSection from './component/CartsSection/CartsSection'
 import GetStartedSection from './component/GetStartedSection/GetStartedSection'
+import PricingSection from './component/PricingSection/PricingSection'
 
 const productPromise = fetch('/data.json').then(res => res.json())
+const pricingPromise = fetch('/pricing.json').then(res => res.json())
 
 function App() {
 
@@ -33,6 +35,9 @@ function App() {
       }
 
       <GetStartedSection></GetStartedSection>
+      <PricingSection pricingPromise={pricingPromise}></PricingSection>
+
+
     </>
   )
 }
