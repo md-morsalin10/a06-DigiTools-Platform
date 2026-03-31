@@ -4,7 +4,7 @@ import { LuShoppingCart } from 'react-icons/lu';
 const Navbar = ({ carts }) => {
     return (
         <div className='sticky top-0 z-50'>
-            <div className="navbar bg-base-100 lg:px-40 shadow-sm">
+            <div className="navbar bg-base-100 lg:px-20 shadow-sm">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,7 +36,7 @@ const Navbar = ({ carts }) => {
                         {carts.length > 0 && <span className='absolute rounded-full text-white px-1.5 bg-red-400 -top-3 left-4'>{carts.length}</span>}
                     </span>
                     <p className='font-medium'>Login</p>
-                    <p className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-2 lg:px-4 py-1 lg:py-2 rounded-full text-white font-medium hover:border hover:border-[#9514FA] hover:bg-none hover:bg-transparent hover:text-[#9514FA] transition-all duration-300'>Get Started</p>
+                    <p className='bg-linear-to-r from-[#4F39F6] to-[#9514FA]  w-35 py-2 rounded-full text-center text-white font-medium hover:border hover:border-[#9514FA] hover:bg-none hover:bg-transparent hover:text-[#9514FA] transition-all duration-300'>Get Started</p>
                 </div>
             </div>
         </div>

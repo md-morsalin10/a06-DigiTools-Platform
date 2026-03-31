@@ -11,7 +11,7 @@ const PricingSection = ({pricingPromise}) => {
                 <h2 className='text-3xl lg:text-5xl font-bold text-[#101727]'>Simple, Transparent Pricing</h2>
                 <p className='text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 py-15'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-15'>
                 {
                     pricingData.map(card => <PricingCard key={card.id} card={card}></PricingCard>)
                 }

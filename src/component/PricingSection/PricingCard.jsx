@@ -27,7 +27,7 @@ const PricingCard = ({ card }) => {
             </div>
 
             {isPopular &&
-                <div className='bg-[#FEF3C6] py-1 flex justify-center items-center rounded-full absolute left-35 -top-3 w-28'>
+                <div className='bg-[#FEF3C6] py-1 flex justify-center items-center rounded-full absolute left-28 lg:left-35 -top-3 w-28'>
                     <p className='text-[#BB4D00]'>{tag}</p>
                 </div>
             }

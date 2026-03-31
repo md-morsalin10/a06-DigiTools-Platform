@@ -10,7 +10,7 @@ const GetStartedSection = () => {
                 <h2 className='text-5xl font-bold text-[#101727]'>Get Started in 3 Steps</h2>
                 <p className='text-[#627382]'>Start using premium digital tools in minutes not hours.</p>
             </div>
-            <div className='grid grid-cols-1 p-7 lg:grid-cols-3 gap-10 pt-15'>
+            <div className='grid grid-cols-1 p-7 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-15'>
 
                 <div className='flex flex-col justify-center items-center relative border-2 h-96 border-gray-200 p-10 rounded-2xl shadow hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer'>
                     <div className='bg-pink-100 p-5 rounded-full'>
